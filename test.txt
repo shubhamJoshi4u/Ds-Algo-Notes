@@ -1,0 +1,115 @@
+{
+  "user": [
+    {
+      "name": "name",
+      "role": "seeker",
+      "email": [
+        {
+          "id": "shubham.joshi@adp.com",
+          "type": "primary"
+        },
+        {
+          "id": "sam@gmail.com",
+          "type": "secondary"
+        }
+      ],
+      "address": [
+        {
+          "line1": "Street no.6",
+          "line2": "Street no.6",
+          "city": "Hyderabad",
+          "State": "Telangana",
+          "addressType": "primary"
+        },
+        {
+          "line1": "Street no.6",
+          "line2": "Street no.6",
+          "city": "Hyderabad",
+          "State": "Telangana",
+          "addressType": "secondary"
+        }
+      ],
+      "seeker": {
+        "qualifications": [
+          {
+            "highestQualification": "UnderGraduate",
+            "course": "B.Tech",
+            "specialization": "mehanical engg",
+            "score": 9.13,
+            "outOf": 10,
+            "projects": [
+              {
+                "projectname": "",
+                "fromDate": "2020-09-01",
+                "projectdetail": "",
+                "state": "",
+                "country": ""
+              },
+              {
+                "projectname": "",
+                "fromDate": "2020-09-01",
+                "projectdetail": "",
+                "state": "",
+                "country": ""
+              }
+            ]
+          },
+          {
+            "highestQualification": "UnderGraduate",
+            "course": "B.Tech",
+            "specialization": "mehanical engg",
+            "score": 9.13,
+            "outOf": 10,
+            "projects": [
+              {
+                "projectname": "",
+                "designation": "developer",
+                "fromDate": "2020-09-01",
+                "projectdetail": "",
+                "state": "",
+                "coutry": ""
+              },
+              {
+                "projectname": "",
+                "designation": "developer",
+                "fromDate": "2020-09-01",
+                "projectdetail": "",
+                "state": "",
+                "coutry": ""
+              }
+            ]
+          }
+        ],
+        "skills": [
+          {
+            "skillName": "sql",
+            "lastUsedOn": 12
+          },
+          {
+            "skillName": "sql",
+            "lastUsedOn": 12
+          }
+        ]
+      },
+      "employer": {
+        "designation": "HR",
+        "company": "xyz",
+        "details": "details"
+      },
+      "jobs": [
+        {
+          "jobid": "",
+          "jobtype": "appliedFor"
+        },
+        {
+          "jobid": "",
+          "jobtype": "posted"
+        },
+        {
+          "jobid": "",
+          "jobtype": "liked"
+        }
+      ]
+    }
+  ]
+}
