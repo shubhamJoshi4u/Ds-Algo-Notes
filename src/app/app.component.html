@@ -1,0 +1,10 @@
+<app-header (headerTabEvenEmitter)="onSelectFeature($event)"></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-shopping-list *ngIf="loadedFeature === 'shoppingList'">
+      </app-shopping-list>
+      <app-recipes *ngIf="loadedFeature !== 'shoppingList'"></app-recipes>
+    </div>
+  </div>
+</div>

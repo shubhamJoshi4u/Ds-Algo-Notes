@@ -1,0 +1,17 @@
+<p>recipe-item works!</p>
+<div class="row">
+    <div class="col-md-12">
+        <a href="#" class="card mb-2" (click)="onRecipeSelect()">
+            <h4 class="card-header card-text">{{recipeItem.name}}</h4>
+            <div class="card-body">
+                <div class="float-left">
+                    <p class="card-text text-dark">{{recipeItem.type}}</p>
+                </div>
+                <span class="float-right">
+                    <img style="max-height: 50px;" class="img-fluid rounded-circle p-0" [src]="recipeItem.imgPath"
+                        alt="{{recipeItem.name}}">
+                </span>
+            </div>
+        </a>
+    </div>
+</div>
