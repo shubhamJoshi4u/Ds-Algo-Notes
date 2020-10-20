@@ -1,22 +1,25 @@
 <div class="row">
     <div class="col-md-12">
-        <form class="form-group">
+        <form class="form-group" (ngSubmit)="ingridientSubmit(f)" #f="ngForm">
             <div class="row">
                 <div class="col-md-7">
                     <label for="itemName">Name</label>
-                    <input id="itemName" type="text" class="form-control" placeholder="Ingridient Name" #recipeNameRef>
+                    <input id="itemName" type="text" class="form-control" placeholder="Ingridient Name" ngModel
+                        name="itemName" required>
                 </div>
                 <div class="col-md-5">
                     <label for="itemAmmount">Ammount</label>
-                    <input id="itemAmmount" type="number" class="form-control" placeholder="Ingridient Count"
-                        #ingridientNameRef>
+                    <input id="itemAmmount" type="number" class="form-control" placeholder="Ingridient Count" ngModel
+                        name="itemAmmount" required pattern="^[1-9]+[0-9]*$">
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 mt-2">
-                    <button type="button" class="btn btn-success mr-2" (click)="ingridientAdd()">Add</button>
-                    <button type="button" class="btn btn-danger mr-2">Delete</button>
-                    <button type="button" class="btn btn-primary mr-2">Clear</button>
+                    <button type="submit" class="btn btn-success mr-2"
+                        [disabled]="!f.valid">{{isEditMode ? 'Update': 'Add'}}</button>
+                    <button *ngIf="isEditMode" type="button" class="btn btn-danger mr-2"
+                        (click)="onDelete()">Delete</button>
+                    <button type="button" class="btn btn-primary mr-2" (click)="onClear()">Clear</button>
                 </div>
             </div>
         </form>

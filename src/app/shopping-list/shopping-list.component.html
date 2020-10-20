@@ -1,9 +1,10 @@
 <div class="row">
     <div class="col-md-10">
-        <app-shopping-edit (onIngridientAdd)="addIngridient($event)"></app-shopping-edit>
+        <app-shopping-edit></app-shopping-edit>
         <hr>
         <ul class="list-group-flush">
-            <a *ngFor="let ingridient of ingridients" class="list-group-item text-dark" style="cursor: pointer;">
+            <a *ngFor="let ingridient of ingridients; let i = index" (click)="onShoppingItemSelect(i)"
+                class="list-group-item text-dark" style="cursor: pointer;">
                 {{ingridient.name}} ({{ingridient.ammount}})
             </a>
         </ul>

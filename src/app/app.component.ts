@@ -7,12 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  loadedFeature: string = 'recipe';
-
-  isHeaderShoppingListTabToggle: boolean = false;
-
-  onSelectFeature(selectedFeature: string) {
-    this.loadedFeature = selectedFeature;
-  }
-
 }

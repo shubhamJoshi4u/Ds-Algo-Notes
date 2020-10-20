@@ -1,9 +1,9 @@
 <div class="row">
     <div class="col-md-12">
-        <button class="btn btn-success mt-2">New app-recipe-item</button>
+        <button class="btn btn-success mt-2" [routerLink]="['new']">Add new Recipe</button>
     </div>
 </div>
 <hr>
-<div *ngFor="let item of recipeList">
-    <app-recipe-item [recipeItem]="item" (onRecipeItemSelect)="emitRecipeItem(item)"></app-recipe-item>
+<div *ngFor="let item of recipeList; let indexOfelement=index">
+    <app-recipe-item [recipeItem]="item" [elementIndex]="indexOfelement"></app-recipe-item>
 </div>

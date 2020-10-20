@@ -1,7 +1,6 @@
-<p>recipe-item works!</p>
 <div class="row">
     <div class="col-md-12">
-        <a href="#" class="card mb-2" (click)="onRecipeSelect()">
+        <a class="card mb-2" [routerLink]="['/recipes', elementIndex]">
             <h4 class="card-header card-text">{{recipeItem.name}}</h4>
             <div class="card-body">
                 <div class="float-left">
